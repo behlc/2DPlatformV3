@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: f6277ca008549794f832d01cf29ce5e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3683584948945512269
+    second: walk-run-facing-left-512px-x-512px-per-frame_0
+  - first:
+      213: 7853614483161740213
+    second: walk-run-facing-left-512px-x-512px-per-frame_1
+  - first:
+      213: -1209342677429876985
+    second: walk-run-facing-left-512px-x-512px-per-frame_2
+  - first:
+      213: 4924188978341010585
+    second: walk-run-facing-left-512px-x-512px-per-frame_3
+  - first:
+      213: 614269366284464557
+    second: walk-run-facing-left-512px-x-512px-per-frame_4
+  - first:
+      213: -4630366626419441968
+    second: walk-run-facing-left-512px-x-512px-per-frame_5
+  - first:
+      213: -5409629395067222883
+    second: walk-run-facing-left-512px-x-512px-per-frame_6
+  - first:
+      213: -7163047961566745883
+    second: walk-run-facing-left-512px-x-512px-per-frame_7
+  - first:
+      213: -95021086427377625
+    second: walk-run-facing-left-512px-x-512px-per-frame_8
+  - first:
+      213: -2149718372193900737
+    second: walk-run-facing-left-512px-x-512px-per-frame_9
+  - first:
+      213: -573668310598814212
+    second: walk-run-facing-left-512px-x-512px-per-frame_10
+  - first:
+      213: -8315596654427556940
+    second: walk-run-facing-left-512px-x-512px-per-frame_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2048
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1027
+        width: 281
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b89022610741ecc0800000000000000
+      internalID: -3683584948945512269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_1
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1028
+        width: 281
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3f7bf13c4adfc60800000000000000
+      internalID: 7853614483161740213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_2
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1030
+        width: 281
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70782140e3d873fe0800000000000000
+      internalID: -1209342677429876985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_3
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1027
+        width: 281
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cd8ec49cb365440800000000000000
+      internalID: 4924188978341010585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 513
+        width: 281
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da13acdebb2568800800000000000000
+      internalID: 614269366284464557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 515
+        width: 281
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0def1740612adbfb0800000000000000
+      internalID: -4630366626419441968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_6
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 517
+        width: 281
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94c1840ab22de4b0800000000000000
+      internalID: -5409629395067222883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_7
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 515
+        width: 281
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea6ab594ddb79c90800000000000000
+      internalID: -7163047961566745883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 281
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720135943da6eaef0800000000000000
+      internalID: -95021086427377625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 3
+        width: 281
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37604ab78aaa22e0800000000000000
+      internalID: -2149718372193900737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_10
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 6
+        width: 281
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5fbdff5bbe908f0800000000000000
+      internalID: -573668310598814212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-run-facing-left-512px-x-512px-per-frame_11
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 4
+        width: 281
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b33b6596e0199c80800000000000000
+      internalID: -8315596654427556940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 17ede70d38cbf344897a53c09ec57d76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walk-run-facing-left-512px-x-512px-per-frame_0: -3683584948945512269
+      walk-run-facing-left-512px-x-512px-per-frame_1: 7853614483161740213
+      walk-run-facing-left-512px-x-512px-per-frame_10: -573668310598814212
+      walk-run-facing-left-512px-x-512px-per-frame_11: -8315596654427556940
+      walk-run-facing-left-512px-x-512px-per-frame_2: -1209342677429876985
+      walk-run-facing-left-512px-x-512px-per-frame_3: 4924188978341010585
+      walk-run-facing-left-512px-x-512px-per-frame_4: 614269366284464557
+      walk-run-facing-left-512px-x-512px-per-frame_5: -4630366626419441968
+      walk-run-facing-left-512px-x-512px-per-frame_6: -5409629395067222883
+      walk-run-facing-left-512px-x-512px-per-frame_7: -7163047961566745883
+      walk-run-facing-left-512px-x-512px-per-frame_8: -95021086427377625
+      walk-run-facing-left-512px-x-512px-per-frame_9: -2149718372193900737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
