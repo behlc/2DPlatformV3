@@ -1,10 +1,15 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
 
-    public int health = 100;
+    //public int health = 100;
+    public int stars;
+    public int playerMaxHealth;
+    public int playerHealth;
 
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -19,6 +24,9 @@ public class Player : MonoBehaviour
     public int extraJumpsValue = 1; // one extra jump
     private int extraJumps; // actual amt of Jump left
     private SpriteRenderer spriteRenderer;
+    [SerializeField] private Slider playerHealthSlider;
+    [SerializeField] private TMP_Text healthText;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +36,8 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         extraJumps = extraJumpsValue;
+        playerHealth = playerMaxHealth;
+        UpdateHealthSlider();
     }
 
     // Update is called once per frame
@@ -35,6 +45,11 @@ public class Player : MonoBehaviour
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        if (moveInput >= 0)
+        {
+            spriteRenderer.flipX = false;
+        } else spriteRenderer.flipX = true;
     
         if (isGrounded)
         {
@@ -75,6 +90,7 @@ public class Player : MonoBehaviour
             else
             {
                 animator.Play("Player_Run");
+
             }
         }
         else
@@ -95,11 +111,13 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
-            health -= 25;
+            playerHealth -= 25;
+            UpdateHealthSlider();
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if(health <= 0)
+            if(playerHealth <= 0)
             {
                 Die();
             }
@@ -116,6 +134,14 @@ public class Player : MonoBehaviour
     private void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Level001");
+    }
+
+    public void UpdateHealthSlider()
+    {
+        playerHealthSlider.maxValue = playerMaxHealth;
+        playerHealthSlider.value = playerHealth;
+        healthText.text = playerHealthSlider.value + "/" + playerHealthSlider.maxValue;
+
     }
 
 }
