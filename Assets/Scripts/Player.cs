@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     [SerializeField] private Slider playerHealthSlider;
     [SerializeField] private TMP_Text healthText;
 
+    private AudioSource audioSource;
+    public AudioClip jumpClip;
+    public AudioClip hurtClip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +37,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         extraJumps = extraJumpsValue;
         playerHealth = playerMaxHealth;
@@ -49,6 +53,7 @@ public class Player : MonoBehaviour
         if (moveInput >= 0)
         {
             spriteRenderer.flipX = false;
+
         } else spriteRenderer.flipX = true;
     
         if (isGrounded)
@@ -61,11 +66,13 @@ public class Player : MonoBehaviour
             if(isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                PlaySFX(jumpClip);
             }
             else if(extraJumps > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 extraJumps --;
+                PlaySFX(jumpClip);
             }
     
         }
@@ -111,6 +118,8 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
+            PlaySFX(hurtClip);
+
             playerHealth -= 25;
             UpdateHealthSlider();
 
@@ -145,4 +154,10 @@ public class Player : MonoBehaviour
 
     }
 
+    public void PlaySFX(AudioClip audioClip, float volume = 0.2f)
+    {
+        audioSource.clip = audioClip;
+        audioSource.volume = volume;
+        audioSource.Play();
+    }
 }
