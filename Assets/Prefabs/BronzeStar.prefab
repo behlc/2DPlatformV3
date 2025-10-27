@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 456309279383183727}
   - component: {fileID: 1107429418204939868}
   m_Layer: 0
-  m_Name: GoldStar
+  m_Name: BronzeStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starsClip: {fileID: 8300000, guid: af2435b78ba5d44beab25e91ad49efb7, type: 3}
-  starsToGive: 3
+  starsToGive: 2
 --- !u!212 &830816008963210929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -823170001302960703, guid: 4d6da0f55f3fa26498e518748de3fb45, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54597694, g: 0.35639015, b: 0.8037735, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
