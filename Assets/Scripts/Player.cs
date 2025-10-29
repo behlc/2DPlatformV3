@@ -13,7 +13,9 @@ public class Player : MonoBehaviour
 
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
-    public float jumpForce = 10f;
+    //public float jumpForce = 10f;
+    public float jumpForce = 7.5f;
+    public float jumpContinuesForce = 1f;
 
     public Transform groundCheck;
     public float groundCheckradius = 0.2f;
@@ -30,6 +32,12 @@ public class Player : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip jumpClip;
     public AudioClip hurtClip;
+
+    public float coyoteTime = 0.2f;
+    public float coyoteTimeCounter;
+    
+    public float jumpBufferTime = 0.15f;
+    private float jumpBufferCounter;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,26 +66,59 @@ public class Player : MonoBehaviour
     
         if (isGrounded)
         {
+            coyoteTimeCounter = coyoteTime;
             extraJumps = extraJumpsValue;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        else
         {
-            if(isGrounded)
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
+        }
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        if(jumpBufferCounter > 0f) 
+        {
+            //if(isGrounded)
+            if(coyoteTimeCounter > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 PlaySFX(jumpClip);
+                coyoteTimeCounter = 0f;
+                jumpBufferCounter = 0f;
             }
+
             else if(extraJumps > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 extraJumps --;
                 PlaySFX(jumpClip);
+                jumpBufferCounter = 0f;
             }
-    
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && rb.linearVelocityY > 0)
+        {
+            rb.AddForceY(jumpContinuesForce);
         }
 
         SetAnimation(moveInput);
+        
+        if(rb.linearVelocityY < 0)
+        {
+            rb.gravityScale = 3f;
+        }
+        else
+        {
+            rb.gravityScale = 2f;
+        }
         
     }
 

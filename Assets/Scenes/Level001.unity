@@ -1357,6 +1357,7 @@ MonoBehaviour:
   playerHealth: 0
   moveSpeed: 5
   jumpForce: 10
+  jumpContinuesForce: 0.75
   groundCheck: {fileID: 1794777180}
   groundCheckradius: 0.2
   groundLayer:
@@ -1367,6 +1368,9 @@ MonoBehaviour:
   healthText: {fileID: 1878129583}
   jumpClip: {fileID: 8300000, guid: 0121a659315624d7a96e98abd2d2a16d, type: 3}
   hurtClip: {fileID: 8300000, guid: 3dc7d265f9c42437492a59228fc7b6d7, type: 3}
+  coyoteTime: 0.2
+  coyoteTimeCounter: 0
+  jumpBufferTime: 0.15
 --- !u!95 &660476163
 Animator:
   serializedVersion: 7
