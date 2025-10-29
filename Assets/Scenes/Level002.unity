@@ -7067,7 +7067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8bf049fa2e32c41ba961ea7358f529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: 
+  nextLevelName: Level003
+  nextLevelValue: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

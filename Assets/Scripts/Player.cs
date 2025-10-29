@@ -164,4 +164,13 @@ public class Player : MonoBehaviour
         audioSource.volume = volume;
         audioSource.Play();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "PowerUp")
+        {
+            extraJumpsValue = 2;
+            Destroy(collision.gameObject);
+        }
+    }
 }

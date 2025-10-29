@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject startMainMenu;
+    public GameObject levelSelect;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,14 +18,20 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void StartGame()
+    public void StartGame(string sceneName)
     {
-        SceneManager.LoadScene("Level001");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void GoToLevelSelect()
+    {
+        startMainMenu.SetActive(false);
+        levelSelect.SetActive(true);
     }
 }
 
